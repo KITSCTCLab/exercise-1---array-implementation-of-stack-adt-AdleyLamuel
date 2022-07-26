@@ -1,6 +1,6 @@
 class Stack:
     def __init__(self, size):
-        self.items = [None] *ze
+        self.items = [None] * size
         self.size = size
         self.top = -1
 
