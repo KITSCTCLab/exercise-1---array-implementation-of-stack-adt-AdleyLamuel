@@ -1,33 +1,31 @@
 class Stack:
     def __init__(self, size):
-        self.items = []
+        self.items = [None] *ze
         self.size = size
         self.top = -1
 
     def is_empty(self):
-        if self.top == (self.size - 1) :
+        if self.top == - 1 :
             return 1
         else :
             return 0
 
     def is_full(self):
-        if self.top == -1 :
+        if self.top == (self.size -1) :
             return 1
         else :
             return 0
 
     def push(self, data):
         if not self.is_full():
-            if self.is_full() !=1:
-                self.top+=1
-                self.items[self.top]=a
+                self.top = self.top + 1
+                self.items[self.top] = data
 
     def pop(self):
         if not self.is_empty():
-            if self.is_empty()!=1:
                 t=self.items[self.top]
                 del self.items[self.top]
-                self.top-=1
+                self.top = self.top - 1
                 return t
 
     def status(self):
