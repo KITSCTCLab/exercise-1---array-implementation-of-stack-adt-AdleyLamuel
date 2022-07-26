@@ -18,20 +18,20 @@ class Stack:
 
     def push(self, data):
         if not self.is_full():
-            if self.isFull() !=1:
+            if self.is_full() !=1:
                 self.top+=1
                 self.items[self.top]=a
 
     def pop(self):
         if not self.is_empty():
-            if self.isEmpty()!=1:
+            if self.is_empty()!=1:
                 t=self.items[self.top]
                 del self.items[self.top]
                 self.top-=1
                 return t
 
     def status(self):
-        if self.isEmpty()!=1:
+        if self.is_empty()!=1:
             for i in range(0,self.top+1):
                 print(self.items[i])
 
